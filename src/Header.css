@@ -1,0 +1,42 @@
+.navbar
+{
+    width: 100%;
+    height: 80px;
+    border: 1px solid #A0AECD;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: #A0AECD;
+    display: flex;
+   
+}
+#box1
+{
+    width:200px;
+    height: 80px;
+    justify-content: center;
+}
+#box1 div{
+    margin-top: 10px;
+    margin-left: 100px;
+}
+#box1 span {
+    font-size:40px;
+    color: black;
+}
+#box2
+{
+    width:600px;
+    height: 80px;
+    display: flex;
+    margin-left: 570px;
+   
+}
+#box2 div
+{
+    margin-left: 80px;
+    margin-top: 30px;
+    color: black;
+    font-size: 20px;
+}
+ a{
+     text-decoration: none;
+ }
