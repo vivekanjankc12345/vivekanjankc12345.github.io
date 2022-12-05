@@ -1,0 +1,81 @@
+.skillouter{
+    border: 1.5px solid none;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+}
+.skillinner{
+    background-color: #2b273b;
+    background: rgb(142,139,161);
+    background: #aecfed;
+    height: 100%;
+    margin: auto;
+    align-items: center;
+    padding-bottom: 50px;
+}
+.skillinner:hover{
+    background: #2b273b;
+    background-image: linear-gradient( 359.4deg,  rgba(12,20,69,1) -16.9%, rgba(71,30,84,1) 119.9% );
+    transform: rotate3d(1, 1, 1, 360deg);
+    transition-property: transform;
+    transition-duration: 1.5s;
+}
+.projectouter{
+    border: 2.5px solid rgba(200, 137, 230, 0.637);
+    padding: 20px;
+   
+}
+.projectouter:hover{
+    border: 3.5px solid rgba(200, 137, 230, 0.637);
+    background: #2b273b;
+    background-image: linear-gradient( 359.4deg,  rgba(12,20,69,1) -16.9%, rgba(71,30,84,1) 119.9% );
+    transform: scale(1.05);
+    transition-property: transform;
+    transition-duration: 1.5s;
+}
+.iconbutton {
+    text-decoration: none;
+    border-radius: 60px;
+    display: inline;
+    align-items: center;
+    overflow:hidden;
+    width: auto;
+    max-width: 50px; /** I'm animating max-width because width needs to be auto, and auto can't be animated **/
+    -webkit-transition: max-width 0.5s;
+    transition: max-width 0.5s;
+  }
+  
+  .iconbutton:hover {
+    max-width: 500px;
+  }
+  
+  .icon {
+    font-family: "Font Awesome 5 Free";
+    font-size: 16px;
+    margin-right: 15px;
+    padding: 0px 8px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .text {
+    white-space: nowrap;
+    padding-right: 15px;
+  }
+
+  .first  {
+    color: red;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+  }
+
+  .code{
+    font-size: 25px;
+    color: red;
+  }
+
+  .last{
+    font-size: 27px;
+    color: red;
+  }

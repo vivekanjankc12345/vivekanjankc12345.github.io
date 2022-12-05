@@ -1,29 +1,22 @@
-//import logo from './logo.svg';
+import { Box, Text } from '@chakra-ui/react';
 import './App.css';
-import {BrowserRouter, Route,Routes} from "react-router-dom"
-import Mainhome from "./MainHome"
-import Home from './Home';
-import About from './About';
-import Contact from './Contact';
-import Project from './Project';
-import Skill from './Skill';
+import './home.css';
+import Navbar from './Pages/Navbar';
+import "./Pages/Page.css";
+import Allroutes from "./Components/Allroutes"
+
 function App() {
-  return (
-    <div className="App">
-      <BrowserRouter>
-  <Routes>
-        <Route path='/' element={<Mainhome />} >
-        <Route index  element={<Home />} />
-        <Route path='/About' element={<About/>} />
-        <Route path='/Contact' element={<Contact />} />
-        <Route path='/Skill' element={<Skill/>} />
-        <Route path='/Project' element={<Project />} />
-        
-        </Route>
-  </Routes>
-      </BrowserRouter>
-    </div>
-  );
+    return (
+      <div className='App'>
+        <div className="container">
+          <Navbar />
+          <Allroutes />
+          <Box p="10px 0px" w="100%" bg="white">
+            <Text fontWeight="bold" fontSize={["xs", "sm", "md"]} color="black" textAlign="center">Designed and developed by Vivek Anjan, @2022 All rights reserved</Text>
+          </Box>
+        </div>
+      </div>
+    );
 }
 
 export default App;
