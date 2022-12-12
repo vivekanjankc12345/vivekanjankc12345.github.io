@@ -26,7 +26,7 @@ function Navbar() {
   return (
     <Box
       zIndex={1}
-      bg={isscroll ? "teal" : "white"}
+      bg={isscroll ? "#4f0045" : "white"}
       w="100%"
       p="10px 0px"
       boxShadow="md"
@@ -44,13 +44,14 @@ function Navbar() {
           {/* <Image w={["30px", "30px", "40px"]} h={"50px"} src={Logo} alt="logo" /> */}
           {/* <h1> &nbsp;   < &nbsp; Shubham jha &nbsp; /> &nbsp; </h1> */}
           <Nav>
-          <Text
+          <Link to="/"> <Text
                 fontWeight="500"
                 fontSize={["sm", "sm", "lg"]}
                 color={"black"}
               >
                 POTFOLIO
-              </Text>
+              </Text></Link>
+         
             {/* <p >
                         <span className="code">&#x0003C;</span>
                         <span className="first">&nbsp;v</span>

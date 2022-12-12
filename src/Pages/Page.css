@@ -2,36 +2,39 @@
     border: 1.5px solid none;
     border-radius: 15px;
     padding: 20px;
-    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+    box-shadow:rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .skillinner{
-    background-color: #2b273b;
-    background: rgb(142,139,161);
-    background: #aecfed;
+    background-color: white;
+    background: white;
+   
     height: 100%;
     margin: auto;
     align-items: center;
     padding-bottom: 50px;
 }
 .skillinner:hover{
-    background: #2b273b;
-    background-image: linear-gradient( 359.4deg,  rgba(12,20,69,1) -16.9%, rgba(71,30,84,1) 119.9% );
-    transform: rotate3d(1, 1, 1, 360deg);
-    transition-property: transform;
-    transition-duration: 1.5s;
-}
-.projectouter{
-    border: 2.5px solid rgba(200, 137, 230, 0.637);
-    padding: 20px;
-   
-}
-.projectouter:hover{
-    border: 3.5px solid rgba(200, 137, 230, 0.637);
-    background: #2b273b;
-    background-image: linear-gradient( 359.4deg,  rgba(12,20,69,1) -16.9%, rgba(71,30,84,1) 119.9% );
+    background: black;
+    background-image: white;
     transform: scale(1.05);
     transition-property: transform;
     transition-duration: 1.5s;
+    color:white
+}
+.projectouter{
+    border: 2px solid black;
+    padding: 20px;
+    border-radius: 50px;
+   
+}
+.projectouter:hover{
+    border: 1px solid black;
+    background: black;
+    background-image: black;
+    transform: scale(1.05);
+    transition-property: transform;
+    transition-duration: 1.5s;
+    color: white;
 }
 .iconbutton {
     text-decoration: none;

@@ -11,7 +11,7 @@ function App() {
         <div className="container">
           <Navbar />
           <Allroutes />
-          <Box p="10px 0px" w="100%" bg="white">
+          <Box p="10px 0px" w="100%" bg="white"  border="1px solid black">
             <Text fontWeight="bold" fontSize={["xs", "sm", "md"]} color="black" textAlign="center">Designed and developed by Vivek Anjan, @2022 All rights reserved</Text>
           </Box>
         </div>

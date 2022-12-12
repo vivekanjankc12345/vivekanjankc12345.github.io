@@ -13,9 +13,9 @@ import "./Page.css";
 
 function Skills(){
 
-return <Box id="Skills" w="full" bg="#bee7f6" color="black" p="30px 0px">
+return <Box id="Skills" w="full" bg="white" color="black" p="30px 0px">
         <Box w="85%" m="auto">
-            <Text textAlign="center" mb="15px" fontWeight="400" fontSize={["3xl", "4xl", "5xl"]}>Technical Skills</Text>
+            <Text textAlign="center" mb="15px" fontWeight="400" fontSize={["3xl", "4xl", "5xl"]}>Skills</Text>
             <Box display="grid" gap="30px" gridTemplateColumns={["repeat(2, 1fr)", "repeat(3, 1fr)", "repeat(4, 1fr)"]} textAlign="center">
                 <Box className="skillouter" h={["150px", "160px", "200px"]}>
                     <Box className="skillinner" p={["10px", "10px", "20px"]}>

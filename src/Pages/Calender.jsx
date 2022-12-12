@@ -5,9 +5,10 @@ import { Box, Text } from "@chakra-ui/react";
 
 function Calender() {
   return (
-    <Box bg="#bee7f6" color="black" h="420">
+    <Box bg="white" color="black" h="420">
         <Box w="80%" transform="scale(1.05)" m="auto" textAlign="center" p="60px auto">
             <Row style={{ justifyContent: "center", padding: "20px auto", paddingTop: "60px"}}>
+           
             <Text mb="25px" textAlign="center"  fontWeight="400" fontSize={["3xl", "4xl", "5xl"]}>My Github Calender</Text>
             <GitHubCalendar
                 username="vivekanjankc12345"

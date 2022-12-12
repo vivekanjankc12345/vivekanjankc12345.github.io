@@ -18,7 +18,7 @@ function Homepage() {
         ml="-1.069px"
         pt={["100px", "50px", "50px"]}
         color="#e1cefd"
-        bg="linear-gradient(to bottom, rgba(255,0,0,85), rgba(0,0,100,1))"
+        bg="white"
       >
         <Box
           h="620px"
@@ -76,12 +76,12 @@ function Homepage() {
                   target="_blank"
                 >
                   <Button
-                    _hover={{ bg: "#4E406F", color: "#ffffff" }}
+                    _hover={{ bg: "white", color: "black" }}
                     pr="0px"
                     pl="5px"
                     fontSize={["2xl", "3xl", "4xl"]}
-                    bg="#C1B6DB"
-                    color="#13022c"
+                    bg="black"
+                    color="white"
                     border="none"
                     variant="solid"
                     leftIcon={<AiOutlineGithub />}
@@ -93,12 +93,12 @@ function Homepage() {
                   target="_blank"
                 >
                   <Button
-                    _hover={{ bg: "#4E406F", color: "#ffffff" }}
+                    _hover={{ bg: "white", color: "black" }}
                     pr="0px"
                     pl="5px"
                     fontSize={["2xl", "3xl", "4xl"]}
-                    bg="#9633ff"
-                    color="#13022c"
+                    bg="black"
+                    color="white"
                     border="none"
                     variant="solid"
                     leftIcon={<AiOutlineLinkedin />}
@@ -109,7 +109,7 @@ function Homepage() {
             {/* <Image position="absolute" top={["-10", "-10", "-20"]} left={["", "", "-8"]} src="https://www.wallpaperuse.com/wallp/56-561836_m.png" alt="img" /> */}
           </Box>
           <Box
-            bg="#C4A9EC"
+            bg="white"
             p="5px"
             w={["45%", "35%", "25%"]}
             m="20px auto 40px auto"
