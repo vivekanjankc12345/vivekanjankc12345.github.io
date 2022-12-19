@@ -6,7 +6,7 @@ import Calender from "./Calender";
 import Contacts from "./Contact";
 import Project from "./Project";
 import Skills from "./Skillls";
-//import Resume from "../Images/Shubham.pdf";
+import image from "../Images/img035.jpg";
 import { AiOutlineGithub, AiOutlineLinkedin } from "react-icons/ai";
 
 function Homepage() {
@@ -44,7 +44,7 @@ function Homepage() {
                   src="https://emojipedia-us.s3.amazonaws.com/source/noto-emoji-animations/344/waving-hand_1f44b.gif"
                   alt="img"
                 />
-                , my name is
+                , this is
               </Text>
               <Text fontFamily="cursive" fontSize={["4xl", "5xl", "6xl"]}>
                 Vivek Anjan
@@ -62,10 +62,10 @@ function Homepage() {
                   }}
                 />
               </Box>
-              {/* <a href={Resume} download><button >Download CV</button> </a> */}
+              {/* <a href={Resume} download><button >Download CV</button> </a>
 
-              {/* <a href={Resume} download>   
-                            <Button _hover={{bg:"#4E406F", color:"#ffffff"}} mt="10px" p={["15px 15px", "20px 20px", "25px 25px"]} fontSize={["md", "lg", "xl"]} bg="#C1B6DB" color="#13022c" border="none" variant='solid' leftIcon={<DownloadIcon />}>
+              <a href={Resume} download>   
+                            <Button _hover={{bg:"white", color:"black"}} mt="10px" p={["15px 15px", "20px 20px", "25px 25px"]} fontSize={["md", "lg", "xl"]} bg="black" color="white" border="none" variant='solid' leftIcon={<DownloadIcon />}>
                             Resume</Button>
                              </a> */}
 
@@ -119,8 +119,8 @@ function Homepage() {
             <Image
               boxShadow="xl"
               w="100%"
-              rounded={["50%", "50%", "50%"]}
-              src=""
+              square={["50%", "50%", "50%"]}
+              src={image}
               alt="img"
             />
           </Box>

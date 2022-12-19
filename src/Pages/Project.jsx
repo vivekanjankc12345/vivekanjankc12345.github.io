@@ -22,6 +22,15 @@ function Project() {
       livelink: "https://heartfelt-creponne-02f101.netlify.app/",
       gitlink: "https://github.com/vivekanjankc12345/rural-error-930/tree/main/myapp",
     },
+    {
+      name: "Hubspot",
+      img: "https://www.hubspot.com/hubfs/SUI-Homepage-Header-Desktop@2x.png",
+      type: "Group",
+      desc: "HubSpot is a CRM platform that connects everything scaling companies need to deliver a best-in-class customer experience into one place",
+      techstack: "React, CHakra UI,Redux",
+      livelink: "https://subtle-semifreddo-ade928.netlify.app/",
+      gitlink: "https://github.com/anwarjitme/green-room-4314",
+    },
   
   ];
 

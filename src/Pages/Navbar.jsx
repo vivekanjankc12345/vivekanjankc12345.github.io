@@ -2,7 +2,7 @@ import { Box, Text } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import AnchorLink from "react-anchor-link-smooth-scroll";
-//import Resume from "../Images/Shubham.pdf"
+import Resume from "../Images/vivekanjan_resume.pdf"
 // import Logo from "../Images/ok.webp"
 import { Nav } from "react-bootstrap";
 
@@ -26,7 +26,7 @@ function Navbar() {
   return (
     <Box
       zIndex={1}
-      bg={isscroll ? "#4f0045" : "white"}
+      bg={isscroll ? "#bee7f6" : "white"}
       w="100%"
       p="10px 0px"
       boxShadow="md"
@@ -127,7 +127,7 @@ function Navbar() {
             </AnchorLink>
           </Link>
           
-           <a href={"resume"} rel="noreferrer" target="_blank" download><Text fontWeight="500" fontSize={['sm', 'sm', 'lg']} color={"black"} >Resume </Text>  </a> 
+           <a href={Resume} rel="noreferrer" target="_blank" download><Text fontWeight="500" fontSize={['sm', 'sm', 'lg']} color={"black"} >Resume </Text>  </a> 
         </Box>
       </Box>
     </Box>
