@@ -6,13 +6,13 @@ import Calender from "./Calender";
 import Contacts from "./Contact";
 import Project from "./Project";
 import Skills from "./Skillls";
-//import Stats from "./Stats";
+import Stats from "./Stats";
 import image from "../Images/img035.jpg";
 import { AiOutlineGithub, AiOutlineLinkedin } from "react-icons/ai";
-
+//#13022C
 function Homepage() {
   return (
-    <Box bg="#13022C">
+    <Box bg="white">
       <Box
         id="Home"
         w="100.1156%"
@@ -23,7 +23,7 @@ function Homepage() {
       >
         <Box
           h="620px"
-          w="85%"
+          w="75%"
           color="black"
           m="auto"
           display={["inline", "inline", "flex"]}
@@ -131,7 +131,7 @@ function Homepage() {
       <About />
       <Skills />
       <Calender />
-      {/* //<Stats /> */}
+      <Stats />
       <Project />
       <Contacts />
     </Box>
