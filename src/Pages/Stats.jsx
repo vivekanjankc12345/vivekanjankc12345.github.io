@@ -5,7 +5,7 @@ const Stats = () => {
   return (
     // streak 
     <div>
-      <div style={{ width: "40%", margin: "auto" }}>
+      <div style={{ width: "40%", margin: "auto",font:"bold" }}>
         <a href="https://github.com/vivekanjankc12345">
           <img
             align="left"
@@ -18,10 +18,10 @@ const Stats = () => {
       <div
         style={{
           width: "60%",
-          height: "400px",
+          height: "200px",
           display: "flex",
           margin: "auto",
-         
+         fontSize:"50px"
         }}
       >
         <a href="https://github.com/vivekanjankc12345">  
