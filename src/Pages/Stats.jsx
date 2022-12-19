@@ -6,20 +6,20 @@ const Stats = () => {
     // streak 
     <div>
       <div 
-    //    height={{
-    //   base: '40%', // 0-48em
-    //   md: '50%', // 48em-80em,
-    //   xl: '25%', // 80em+
-    // }}
+       height={{
+      base: '40%', // 0-48em
+      md: '50%', // 48em-80em,
+      xl: '25%', // 80em+
+    }}
    
    
-    // width={[
-    //   '40%', // 0-30em
-    //   '50%', // 30em-48em
-    //   '25%', // 48em-62em
-    //   '15%', // 62em+
-    // ]}>
-    >
+    width={[
+      '40%', // 0-30em
+      '50%', // 30em-48em
+      '25%', // 48em-62em
+      '15%', // 62em+
+    ]}>
+    
         <a href="https://github.com/vivekanjankc12345">
           <img
             align="center"

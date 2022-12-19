@@ -49,7 +49,7 @@ function Navbar() {
                 fontSize={["sm", "sm", "lg"]}
                 color={"black"}
               >
-                POTFOLIO
+                VIVEK ANJAN
               </Text></Link>
          
             {/* <p >
