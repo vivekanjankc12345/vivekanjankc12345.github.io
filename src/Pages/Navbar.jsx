@@ -2,7 +2,7 @@ import { Box, Text } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import AnchorLink from "react-anchor-link-smooth-scroll";
-import Resume from "../Images/vivekanjan_resume.pdf"
+import Resume from "../Images/vivek-anjan-resume.pdf"
 // import Logo from "../Images/ok.webp"
 import { Nav } from "react-bootstrap";
 

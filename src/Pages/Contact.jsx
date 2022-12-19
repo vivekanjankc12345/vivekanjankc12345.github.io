@@ -14,7 +14,7 @@ function Contacts(){
                     </Box>
                     <Box display={["inline", "flex", "flex"]} gap={["", "10px", "15px"]} alignItems="center">
                         <Icon as={AiOutlineMail} w={["40px", "30px", "40px"]} h="50px" color='black' />
-                        <Text fontSize={["sm", "md", "xl"]} textDecoration="underline">vivekanjankc12345@gamil.com</Text>
+                        <Text fontSize={["sm", "md", "xl"]} textDecoration="underline"><a href="https://mail.google.com/mail/u/0/?hl=en/#inbox?compose=new">vivekanjankc12345@gamil.com</a></Text>
                     </Box>
                     <Box display={["inline", "flex", "flex"]} gap={["", "10px", "15px"]} alignItems="center">
                     <Icon as={AiFillGithub} w={["40px", "30px", "40px"]} h="50px" color='black' />

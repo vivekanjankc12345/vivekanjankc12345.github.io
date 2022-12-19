@@ -2,7 +2,7 @@ import React from "react";
 import GitHubCalendar from "react-github-calendar";
 import { Row } from "react-bootstrap";
 import { Box, Text } from "@chakra-ui/react";
-
+//import Stats from "./Stats"
 function Calender() {
   return (
     <Box bg="white" color="black" h="420">
@@ -19,6 +19,7 @@ function Calender() {
             />
             </Row>
         </Box>
+       
     </Box>
   );
 }

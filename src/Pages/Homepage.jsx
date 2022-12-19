@@ -6,6 +6,7 @@ import Calender from "./Calender";
 import Contacts from "./Contact";
 import Project from "./Project";
 import Skills from "./Skillls";
+//import Stats from "./Stats";
 import image from "../Images/img035.jpg";
 import { AiOutlineGithub, AiOutlineLinkedin } from "react-icons/ai";
 
@@ -130,6 +131,7 @@ function Homepage() {
       <About />
       <Skills />
       <Calender />
+      {/* //<Stats /> */}
       <Project />
       <Contacts />
     </Box>
