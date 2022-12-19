@@ -23,11 +23,12 @@ function Homepage() {
       >
         <Box
           h="620px"
-          w="75%"
+          w="85%"
           color="black"
           m="auto"
           display={["inline", "inline", "flex"]}
           alignItems="center"
+         
           justifyContent="space-around"
         >
           <Box mt={["50px", "50px", "0px"]} w={["100%", "100%", "60%"]}>
