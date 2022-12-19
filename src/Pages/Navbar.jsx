@@ -2,7 +2,6 @@ import { Box, Text } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import AnchorLink from "react-anchor-link-smooth-scroll";
-import Resume from "../Images/vivek-anjan-resume.pdf"
 // import Logo from "../Images/ok.webp"
 import { Nav } from "react-bootstrap";
 
@@ -127,7 +126,7 @@ function Navbar() {
             </AnchorLink>
           </Link>
           
-           <a href={Resume} rel="noreferrer" target="_blank" download><Text fontWeight="500" fontSize={['sm', 'sm', 'lg']} color={"black"} >Resume </Text>  </a> 
+           <a href="https://drive.google.com/file/d/1hkQy2v3Pku-j8T6GmewOfYF-VmeV_dJI/view" rel="noreferrer" target="_blank" download><Text fontWeight="500" fontSize={['sm', 'sm', 'lg']} color={"black"} >Resume </Text>  </a> 
         </Box>
       </Box>
     </Box>

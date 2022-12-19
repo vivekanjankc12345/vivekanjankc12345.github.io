@@ -1,4 +1,4 @@
-//import { DownloadIcon } from "@chakra-ui/icons";
+import { DownloadIcon } from "@chakra-ui/icons";
 import { Box, Button, Image, Text } from "@chakra-ui/react";
 import Typewriter from "typewriter-effect";
 import About from "./About";
@@ -8,6 +8,7 @@ import Project from "./Project";
 import Skills from "./Skillls";
 import Stats from "./Stats";
 import image from "../Images/img035.jpg";
+import Resume from "../Images/vivek-anjan-resume.pdf"
 import { AiOutlineGithub, AiOutlineLinkedin } from "react-icons/ai";
 //#13022C
 function Homepage() {
@@ -64,12 +65,12 @@ function Homepage() {
                   }}
                 />
               </Box>
-              {/* <a href={Resume} download><button >Download CV</button> </a>
+              <a href={Resume} download><button >Download CV</button> </a>
 
               <a href={Resume} download>   
                             <Button _hover={{bg:"white", color:"black"}} mt="10px" p={["15px 15px", "20px 20px", "25px 25px"]} fontSize={["md", "lg", "xl"]} bg="black" color="white" border="none" variant='solid' leftIcon={<DownloadIcon />}>
                             Resume</Button>
-                             </a> */}
+                             </a>
 
               <Box mt="15px" gap="15px" display="flex" color="#13022c">
                 <a
