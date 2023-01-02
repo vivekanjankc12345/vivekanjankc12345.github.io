@@ -1,4 +1,22 @@
 import { Box, Text } from "@chakra-ui/react";
+import React from "react";
+// import { Link } from "react-router-dom";
+import {
+  Button,
+  Heading,
+  TabList,
+  Tabs,
+  Tab,
+  useMediaQuery,
+  useDisclosure,
+  Drawer,
+  DrawerCloseButton,
+  DrawerBody,
+  DrawerContent,
+  DrawerOverlay,
+  Grid,
+} from "@chakra-ui/react";
+import { HamburgerIcon } from "@chakra-ui/icons";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import AnchorLink from "react-anchor-link-smooth-scroll";
@@ -7,7 +25,8 @@ import { Nav } from "react-bootstrap";
 //const [isSmall] = useMediaQuery("(min-width: 780px)");
 function Navbar() {
   const [isscroll, setisscroll] = useState(false);
-
+  const [isSmall] = useMediaQuery("(min-width: 780px)");
+     const { isOpen, onOpen, onClose } = useDisclosure();
   function isScrolling() {
     if (window.scrollY > 80) {
       setisscroll(true);
@@ -31,14 +50,18 @@ function Navbar() {
       boxShadow="md"
       color="Black"
       position="fixed"
-      
+     
     >
+
+   {isSmall ? 
+   (
       <Box
         w="95%"
         m="auto"
         display={["inline", "flex", "flex"]}
         justifyContent="space-between"
         textAlign={["center", "", ""]}
+       
       >
         <Box rounded="50%" ml={["45%", "0%", "0%"]} mt="5px" mb="5px"   >
           {/* <Image w={["30px", "30px", "40px"]} h={"50px"} src={Logo} alt="logo" /> */}
@@ -132,7 +155,152 @@ function Navbar() {
            <a href="https://drive.google.com/file/d/1hkQy2v3Pku-j8T6GmewOfYF-VmeV_dJI/view" rel="noreferrer" target="_blank" download><Text fontWeight="500" fontSize={['sm', 'sm', 'lg']} color={"black"} >Resume </Text>  </a> 
         </Box>
       </Box>
+
+   ):
+      (
+        <Box >
+        <Box justifyContent='space-around' display='flex'>
+        <Box rounded="50%" mt="5px" mb="5px"   >
+          {/* <Image w={["30px", "30px", "40px"]} h={"50px"} src={Logo} alt="logo" /> */}
+          {/* <h1> &nbsp;   < &nbsp; Shubham jha &nbsp; /> &nbsp; </h1> */}
+          <Nav>
+          <Link to="/"> <Text
+                fontWeight="500"
+                fontSize={["sm", "sm", "lg"]}
+                color={"black"}
+              >
+               VIVEKANJAN
+              </Text></Link>
+         
+            {/* <p >
+                        <span className="code">&#x0003C;</span>
+                        <span className="first">&nbsp;v</span>
+                        <span className="last">anjan</span>
+                        <span className="first">&nbsp;J</span>
+                        <span className="last">ha&nbsp;</span>
+                        <span className="code">&#x0002F;&#x0003E;</span>
+                      </p> */}
+          </Nav>
+          </Box>
+       <Box>
+
+          <Button            //ref={btnRef}
+            colorScheme="gold"
+            backgroundColor="#F60A68"
+            onClick={onOpen}
+          >
+            <HamburgerIcon />
+          </Button>
+          <Drawer
+            isOpen={isOpen}
+            placement="right"
+            onClose={onClose}
+           // finalFocusRef={btnRef}
+          >
+            <DrawerOverlay />
+            <DrawerContent>
+              <DrawerCloseButton />
+
+              <DrawerBody bg="#F60A68">
+                <Grid mt="19%" gap="10">
+                  {/* <Box>
+                            <Link><Heading>Home</Heading></Link>
+                        </Box> */}
+                  <Box onClick={onClose}>
+                  <AnchorLink href="#Home">
+                    <Heading
+                      _hover={{ color: "rgb(19, 39, 95)" }}
+                      color="white"
+                      textAlign="left"
+                      as="h3"
+                      size="lg"
+                    >
+                  <Link to="/">Home</Link>  
+                    </Heading>
+                    </AnchorLink>
+                  </Box>
+                  <Box onClick={onClose}>
+                  <AnchorLink href="#About">
+                    <Heading
+                      _hover={{ color: "rgb(19, 39, 95)" }}
+                      color="white"
+                      textAlign="left"
+                      as="h3"
+                      size="lg"
+                    >
+                      <Link to="/about">About</Link>
+                    </Heading>
+                    </AnchorLink>
+                  </Box>
+                  <Box onClick={onClose}>
+                  <AnchorLink href="#Skills">
+                    <Heading
+                      _hover={{ color: "rgb(19, 39, 95)" }}
+                      color="white"
+                      textAlign="left"
+                      as="h3"
+                      size="lg"
+                    >
+                    
+                      {" "}
+                      <Link to="/skills">  Skills</Link>
+                     
+                    </Heading>
+                    </AnchorLink>
+                  </Box>
+                  <Box onClick={onClose}>
+                  <AnchorLink href="#Project">
+                    <Heading
+                      _hover={{ color: "rgb(19, 39, 95)" }}
+                      color="white"
+                      textAlign="left"
+                      as="h3"
+                      size="lg"
+                    >
+                      {" "}
+                      <Link to="/project" >Project</Link>
+                    </Heading>
+                    </AnchorLink>
+                  </Box>
+                  <Box onClick={onClose}>
+                  <AnchorLink href="#Contact">
+                    <Heading
+                      _hover={{ color: "rgb(19, 39, 95)" }}
+                      color="white"
+                      textAlign="left"
+                      as="h3"
+                      size="lg"
+                    >
+                    <Link to="/contact">Contact</Link> 
+                    </Heading>
+                    </AnchorLink>
+                  </Box>
+                  <Box onClick={onClose}>
+                    <Heading
+                      _hover={{ color: "rgb(19, 39, 95)" }}
+                      color="white"
+                      textAlign="left"
+                      as="h3"
+                      size="lg"
+                    >
+                   <a href="https://drive.google.com/file/d/1hkQy2v3Pku-j8T6GmewOfYF-VmeV_dJI/view" rel="noreferrer" target="_blank" download>Resume   </a>  
+                    </Heading>
+                  </Box>
+                </Grid>
+              </DrawerBody>
+            </DrawerContent>
+          </Drawer>
+        </Box>
+        </Box>
+        </Box>
+      )}
+
+  
+
+                    
+
     </Box>
+   
   );
 }
 

@@ -42,7 +42,7 @@ function Project() {
       color="black"
       p="30px 0px"
       textAlign="center"
-      marginTop="200px"
+      marginTop="400px"
     >
       <Box w="85%" m="auto">
         <Text
